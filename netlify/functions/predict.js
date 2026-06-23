@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const { teamA, teamB } = JSON.parse(req.body);
 
     const client = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY, // stored in Netlify env vars
+      apiKey: process.env.REACT_APP_OPENAI_API_KEY, // stored in Netlify env vars
     });
 
     const prompt = `
